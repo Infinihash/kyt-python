@@ -7,7 +7,7 @@ errors surface as exceptions you can catch.
 Quick start:
 
     from infinihash_kyt import KYT
-    client = KYT(api_key="ih_kyt_...")
+    client = KYT(api_key="kyt_...")
     result = client.screen.address(
         "0x722122dF12D4e14e13Ac3b6895a86e84145b6967",
         chain="ethereum",

@@ -1,4 +1,10 @@
-# infinihash-kyt (Python)
+# infinihash-kyt (Python) — DEPRECATED, use Infinihash/infinihash-kyt
+
+> **This repository is deprecated.** The maintained Python SDK is
+> [Infinihash/infinihash-kyt](https://github.com/Infinihash/infinihash-kyt).
+> Both repositories claim the PyPI name `infinihash-kyt`; publish only from
+> `Infinihash/infinihash-kyt`, never from this repository. This copy is kept
+> for history.
 
 Thin Python wrapper for the Infinihash KYT REST API. Screen wallets, manage
 cases, pull SAR drafts.
@@ -9,12 +15,17 @@ cases, pull SAR drafts.
 pip install infinihash-kyt
 ```
 
+## API keys
+
+Create a key at https://kyt.infinihash.com/kyt/settings/api-keys. Keys start
+with `kyt_`.
+
 ## Use
 
 ```python
 from infinihash_kyt import KYT
 
-client = KYT(api_key="ih_kyt_...")  # or set INFINIHASH_KYT_KEY in your env
+client = KYT(api_key="kyt_...")  # or set INFINIHASH_KYT_KEY in your env
 
 # Screen a wallet
 r = client.screen.address("0x722122dF12D4e14e13Ac3b6895a86e84145b6967", chain="ethereum")
